@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/acedemics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aubrey&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="assets/paper.png" alt="" id="background-image">
+
+    <div id="border">
+        <div id="page-container">
+            
+            <div class="page active" id="home">
+                <div id="home-title">
+                    <h1 id="home-name">
+                        Jonah<br>Coffelt
+                    </h1>
+                    <h2 id="home-subtitle">
+                        computer science • game designer • philosopher
+                    </h2>
+                </div>
+            </div>
+
+            <div class="page" id="projects">
+                <div id="projects-title">
+                    <h1 id="project-name">
+                        projects
+                    </h1>
+                </div>
+                <div id="project-list">
+                    <button class="project-item" data-preview="project-preview-1">
+                        <h1>basilisk engine</h1>
+                        <p>a lightweight 3D engine package for python</p>
+                    </button>
+                    <button class="project-item" data-preview="project-preview-2">
+                        <h1>minecraft python edition</h1>
+                        <p>a minecraft clone, but made in python</p>
+                    </button>
+                    <button class="project-item" data-preview="project-preview-3">
+                        <h1>cpu design</h1>
+                        <p>a logisim implementation of a y86 cpu</p>
+                    </button>
+                    <button class="project-item" data-preview="project-preview-4">
+                        <h1>emulsion</h1>
+                        <p>2nd place chillennium game made in 48 hours</p>
+                    </button>
+                    <button class="project-item" data-preview="project-preview-5">
+                        <h1>neural network</h1>
+                        <p>neural network with back propagation made with numpy</p>
+                    </button>
+                    <button class="project-item" data-preview="project-preview-6">
+                        <h1>portfolio website</h1>
+                        <p>the website you are on right now</p>
+                    </button>
+                </div>
+                
+                <div id="previews-container">
+                    <img src="assets/basilsk1.png" alt="" class="project-preview" id="project-preview-1">
+                    <img src="assets/minecraft1.png" alt="" class="project-preview" id="project-preview-2">
+                    <img src="assets/cpu1.png" alt="" class="project-preview" id="project-preview-3">
+                    <img src="assets/emulsion1.png" alt="" class="project-preview" id="project-preview-4">
+                    <img src="assets/nn1.png" alt="" class="project-preview" id="project-preview-5">
+                    <img src="assets/portfolio1.png" alt="" class="project-preview" id="project-preview-6">
+                </div>
+            </div>
+
+            <div class="page" id="acedemics">
+                
+            </div>
+        </div>
+        <div id="nav">
+
+            <div id="nav-title"></div>
+
+            <div id="nav-bar">
+                <button class="nav-button" data-tooltip="home" data-page="home">
+                    <img src="assets/home.png" alt="">
+                </button>
+                <button class="nav-button"  data-tooltip="projects" data-page="projects">
+                    <img src="assets/projects.png" alt="">
+                </button>
+                <button class="nav-button"  data-tooltip="acedemics" data-page="acedemics">
+                    <img src="assets/acedemics.png" alt="">
+                </button>
+                <button class="nav-button"  data-tooltip="resume">
+                    <img src="assets/projects.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/nav.js"></script>
+    <script src="script/project.js"></script>
+</body>
+</html>
