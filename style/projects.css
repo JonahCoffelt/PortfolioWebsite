@@ -78,8 +78,8 @@
     top: 75px;
     filter: blur(1px); 
     border-radius: 5px;
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -92,4 +92,69 @@
 
 .project-preview.active {
     opacity: 1;
+}
+
+
+.project-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 75px;
+    margin-top: 75px;
+    width: calc(100% - 150px);
+    height: calc(100% - 125px);
+}
+
+.project-images-container {
+    display: flex;
+    justify-content: right;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.project-image {
+    object-fit: cover;
+    height: calc(50% - 5px);
+    aspect-ratio: 1;
+    border: 1px black solid;
+}
+
+.project-content {
+    padding-left: 50px;
+}
+
+.project-content > h1 {
+    font-size: 94px;
+    display: inline-block;
+    padding-bottom: 25px;
+    position: relative;
+
+}
+
+.project-content > h1:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid black;
+}
+
+
+.project-content > h2 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-top: 25px;
+}
+
+.project-content > p {
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 50px;
 }
