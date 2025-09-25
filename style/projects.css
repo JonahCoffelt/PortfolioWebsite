@@ -106,14 +106,12 @@
 }
 
 .project-images-container {
-    display: flex;
     justify-content: right;
+    height: 100%;
 }
 
 .project-images {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
 }
 
 
