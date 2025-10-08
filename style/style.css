@@ -15,6 +15,10 @@ h2 {
     font-size: 26px;
 }
 
+b {
+    font-family: 'Fragment Mono';
+}
+
 #page-container {
     position: relative;
     width: 100%;

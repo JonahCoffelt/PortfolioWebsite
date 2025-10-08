@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,24 @@
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/projects.css">
-    <link rel="stylesheet" href="style/acedemics.css">
+    <link rel="stylesheet" href="style/involvement.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aubrey&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aubrey&family=Fragment+Mono:ital@0;1&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/portfolioLogo.png">
 </head>
+
 <body>
     <img src="assets/paper.png" alt="" id="background-image">
 
     <div id="border">
         <div id="page-container">
-            
+
             <div class="page active" id="home">
                 <div id="home-title">
                     <h1 id="home-name">
-                        Jonah<br>Coffelt
+                        jonah<br>coffelt
                     </h1>
                     <h2 id="home-subtitle">
                         computer science • game designer • philosopher
@@ -38,32 +41,32 @@
                     </h1>
                 </div>
                 <div id="project-list">
-                    <button class="project-item nav-button" data-preview="project-preview-1"  data-page="basilisk">
+                    <button class="project-item nav-button" data-preview="project-preview-1" data-page="basilisk">
                         <h1>basilisk engine</h1>
                         <p>a lightweight 3D engine package for python</p>
                     </button>
-                    <button class="project-item nav-button" data-preview="project-preview-2"  data-page="minecraft">
+                    <button class="project-item nav-button" data-preview="project-preview-2" data-page="minecraft">
                         <h1>minecraft python edition</h1>
                         <p>a minecraft clone, but made in python</p>
                     </button>
-                    <button class="project-item nav-button" data-preview="project-preview-3"  data-page="cpu">
+                    <button class="project-item nav-button" data-preview="project-preview-3" data-page="cpu">
                         <h1>cpu design</h1>
                         <p>a logisim implementation of a y86 cpu</p>
                     </button>
-                    <button class="project-item nav-button" data-preview="project-preview-4"  data-page="emulsion">
+                    <button class="project-item nav-button" data-preview="project-preview-4" data-page="emulsion">
                         <h1>emulsion</h1>
                         <p>2nd place chillennium game made in 48 hours</p>
                     </button>
-                    <button class="project-item nav-button" data-preview="project-preview-5"  data-page="nn">
+                    <button class="project-item nav-button" data-preview="project-preview-5" data-page="nn">
                         <h1>neural network</h1>
                         <p>neural network with back propagation made with numpy</p>
                     </button>
-                    <button class="project-item nav-button" data-preview="project-preview-6"  data-page="portfolio">
+                    <button class="project-item nav-button" data-preview="project-preview-6" data-page="portfolio">
                         <h1>portfolio website</h1>
                         <p>the website you are on right now</p>
                     </button>
                 </div>
-                
+
                 <div id="previews-container">
                     <img src="assets/basilsk1.png" alt="" class="project-preview" id="project-preview-1">
                     <img src="assets/minecraft1.png" alt="" class="project-preview" id="project-preview-2">
@@ -87,7 +90,21 @@
                 <div class="project-content">
                     <h1>basilisk engine</h1>
                     <h2>c++ • python • glsl • opengl • cmake</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Basilisk is a 3D engine package for Python that can create visualizations, simulations, and video
+                        games from the comfort and ease of Python. Basilisk is designed for quick and effortless
+                        development, providing a powerful backend engine that supports larger-scale projects without
+                        requiring extensive setup. The engine automatically handles all graphics and physics for you,
+                        making it easy to get projects running, with the option to inject your own custom functionality
+                        if desired for more advanced control.
+                        Basilisk was originally programmed entirely in Python and GLSL, taking advantage of ModernGL for
+                        GPU-accelerated rendering. Currently, we are working to rewrite Basilisk in C++ to allow for
+                        greater control over system resources, improved optimization, and faster physics calculations,
+                        making the engine more capable for demanding projects.
+                        I am primarily responsible for the graphics programming aspect of the engine. I have implemented
+                        highly optimized batched rendering, capable of handling millions of objects efficiently. I also
+                        implemented physically based rendering based on Disney’s BSDF, as outlined in 2012 by Brent
+                        Burley, which allows materials and lighting to interact realistically.
+                    </p>
                 </div>
             </div>
 
@@ -104,7 +121,17 @@
                 <div class="project-content">
                     <h1>minecraft python edition</h1>
                     <h2>python • glsl • moderngl</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Minecraft Python Edition is a Minecraft clone programmed entirely in Python and GLSL using
+                        ModernGL. It includes a simplex-based world generation system with biomes, caves, trees, and
+                        ores, as well as the Minecraft inventory and crafting system, complete with a crafting table and
+                        furnace. The game also uses a simple flood-fill lighting system with ambient occlusion, which
+                        adds to the visual depth and overall feel of the game.
+                        Much of the development was focused on optimizing the chunk meshing system and the flood-fill
+                        lighting. The chunk meshing system needed to account for optimal rendering, culling faces that
+                        are never visible, and the limitations of remeshing in Python. The lighting system was designed
+                        to only update areas affected by player actions, reducing the time spent computing lighting
+                        across the world.
+                    </p>
                 </div>
             </div>
 
@@ -121,7 +148,11 @@
                 <div class="project-content">
                     <h1>cpu design</h1>
                     <h2>logisim</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>For CSCE 312, Computer Organization, I designed a CPU in Logisim that implements a Y86
+                        architecture. I contributed primarily to the instruction memory and memory fetch, the register
+                        file, and memory read/write components. I also implemented high-level component orchestration
+                        and timing. Using this CPU, I programmed several scripts in Y86 to demonstrate its capabilities,
+                        including arithmetic operations, memory management, and matrix multiplication.</p>
                 </div>
             </div>
 
@@ -138,7 +169,17 @@
                 <div class="project-content">
                     <h1>emulsion</h1>
                     <h2>python • glsl • basilisk engine</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Emulsion is a game made in 48 hours for Chillennium, the world’s largest in-person student-run
+                        game jam, where it earned 2nd place overall. It was programmed entirely using the Basilisk
+                        Engine. Emulsion is a first-person shooter where bullets reveal a rift to another parallel
+                        world. My main responsibility was writing shader code to handle the ability to view the other
+                        world through bullet shots. This required implementing multiple shaders, including
+                        shaders for each world
+                        bullet path shader
+                        depth testing shader
+                        final image combination shaders
+                        All of these worked together to create a single, seamless final image.
+                    </p>
                 </div>
             </div>
 
@@ -155,7 +196,10 @@
                 <div class="project-content">
                     <h1>nerual network</h1>
                     <h2>python • numpy</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>I created a lightweight neural network in Python using Numpy. Using calculus-based gradient
+                        backpropagation, the network was trained with the MNIST dataset to recognize handwritten
+                        numbers, achieving 95% accuracy. This project allowed me to explore both the mathematical
+                        foundations of neural networks and practical implementation.</p>
                 </div>
             </div>
 
@@ -172,12 +216,94 @@
                 <div class="project-content">
                     <h1>portfolio website</h1>
                     <h2>html • css • javascript • figma</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>The website you are currently visiting! The project demonstrates front-end development skills and
+                        attention to user interaction. The project demonstrates both front-end design skills and the
+                        ability to create interactive, user-friendly interfaces.</p>
                 </div>
             </div>
 
             <div class="page" id="involvement">
-                
+                <div id="involvement-container">
+                    <div id="involvement-title">
+                        experience
+                    </div>
+                    <div id="involvement-bar">
+                        <button class="involvement-item project-item nav-button" data-page="istar">
+                            <img src="assets/istar.png" alt="">
+                            <div>istar lab</div>
+                        </button>
+                        <button class="involvement-item project-item nav-button" data-page="tagd">
+                            <img src="assets/tagd-light.png" alt="">
+                            <div>tagd vice president</div>
+                        </button>
+                        <button class="involvement-item project-item nav-button" data-page="twmc">
+                            <img src="assets/twmc.jpg" alt="">
+                            <div>twmc audio/visual tech</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page project-container" id="istar">
+                <button class="nav-button project-close-button" data-tooltip="" data-page="involvement">
+                    <img src="assets/x.png" alt="x">
+                </button>
+                <div class="project-images-container">
+                    <div class="project-images">
+                        <img src="assets/istar.png" alt="" class="project-image">
+                        <img src="assets/istar.png" alt="" class="project-image">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h1>istar</h1>
+                    <h2>ai • agentic systems • python</h2>
+                    <p>iSTAR is a Texas A&M lab that specializes in resilient systems, cybersecurity, and artificial intelligence. I developed a framework
+                    for facilitating human-AI interactions with a focus on conflict detection and resolution. Implemented a client-server architecture
+                    inspired by the design of MCP. Replicated numerous agent tools and extensions found in Google’s A2A. Designed an image
+                    classification case study that showed the benefits of my framework over traditional single-agent approaches. Additionally,
+                    collaborated with other researchers on large scale analysis of an anomaly detected on an external network telescope. Discovered
+                    many signs of potential probing and cyber attacks.</p>
+                </div>
+            </div>
+
+            <div class="page project-container" id="tagd">
+                <button class="nav-button project-close-button" data-tooltip="" data-page="involvement">
+                    <img src="assets/x.png" alt="x">
+                </button>
+                <div class="project-images-container">
+                    <div class="project-images">
+                        <img src="assets/tagd-audience.jpg" alt="" class="project-image">
+                        <img src="assets/tagd-me.jpg" alt="" class="project-image">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h1>tagd vice president</h1>
+                    <h2>ai • agentic systems • python</h2>
+                    <p>Responsible for creating and maintaining industry connections and working closely with the president on organization operations.
+                        I collaborate with the officer team to create unique weekly meetings focused on game development and education. Develop all
+                        proprietary software needed for meetings, from web apps to AI-powered actors. Coordinate with industry professions for industry
+                        speaker events and judging at the TAGD semesterly game development competition.</p>
+                </div>
+            </div>
+
+            <div class="page project-container" id="twmc">
+                <button class="nav-button project-close-button" data-tooltip="" data-page="involvement">
+                    <img src="assets/x.png" alt="x">
+                </button>
+                <div class="project-images-container">
+                    <div class="project-images">
+                        <img src="assets/twmc-trad.jpg" alt="" class="project-image">
+                        <img src="assets/twmc-trad2.webp" alt="" class="project-image">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h1>twmc audio/visual tech</h1>
+                    <h2>ai • agentic systems • python</h2>
+                    <p>I operate audio on various sound platforms and program and execute lighting on the GrandMA2 and GrandMA3 systems. I
+                        coordinate with lead pastors, tech directors, and music directors to bring together many technical elements and demands into a
+                        cohesive service experience. I also program the lighting file on the GrandMA2 board for the student service, creating a dynamic
+                        show that still presents an easily-operated interface for student volunteers.</p>
+                </div>
             </div>
         </div>
         <div id="nav">
@@ -188,13 +314,13 @@
                 <button class="nav-button" data-tooltip="home" data-page="home">
                     <img src="assets/home.png" alt="">
                 </button>
-                <button class="nav-button"  data-tooltip="projects" data-page="projects">
+                <button class="nav-button" data-tooltip="projects" data-page="projects">
                     <img src="assets/projects.png" alt="">
                 </button>
-                <button class="nav-button"  data-tooltip="involvement" data-page="involvement">
+                <button class="nav-button" data-tooltip="experience" data-page="involvement">
                     <img src="assets/involvement.png" alt="">
                 </button>
-                <button class="nav-button"  data-tooltip="resume">
+                <button class="nav-button" data-tooltip="resume">
                     <img src="assets/projects.png" alt="">
                 </button>
             </div>
@@ -204,4 +330,5 @@
     <script src="script/nav.js"></script>
     <script src="script/project.js"></script>
 </body>
+
 </html>
