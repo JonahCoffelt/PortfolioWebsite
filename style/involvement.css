@@ -62,3 +62,8 @@
     align-items: center;
     font-family: 'Fragment Mono';
 }
+
+/* Phone */
+@media (max-aspect-ratio: 4/5) {
+
+}

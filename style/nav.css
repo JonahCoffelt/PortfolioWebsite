@@ -39,3 +39,14 @@
     min-height: var(--card-padding); /* <- reserve space */
     min-width: 60px;  /* optional, prevents size jumps */
 }
+
+
+/* Phone */
+@media (max-aspect-ratio: 4/5) {
+    #nav-title {
+        position: absolute;
+        pointer-events: none;
+        top: -1000vh;
+        left: -1000vh;
+    }
+}

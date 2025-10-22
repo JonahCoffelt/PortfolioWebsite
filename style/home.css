@@ -34,3 +34,27 @@
     border-radius: 100%;
     cursor: pointer;
 }
+
+/* Phone */
+@media (max-aspect-ratio: 4/5) {
+    #home-title {
+        padding-left: 0;
+        padding-right: var(--card-padding);
+        border-left: none;
+        text-align: center;
+    }
+
+    #home-name {
+        padding-bottom: calc(0.25 * var(--card-padding));
+        border-bottom: 3px black solid;
+    }
+
+    #home-subtitle {
+        padding-top: calc(0.25 * var(--card-padding));
+    }
+
+    .connections-bar {
+        padding-top: calc(0.25 * var(--card-padding));
+        height: calc(4 * var(--font-size-subtitle));
+    }
+}
