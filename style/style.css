@@ -1,3 +1,21 @@
+/* Computer */
+@media (min-aspect-ratio: 4/5) {
+    :root {
+        --card-padding: min(50px, 5vh);
+        --nav-width: 20vw;
+        --font-size-title:    min(164px, 10vw); 
+        --font-size-page:     min(55px, 4vw); 
+        --font-size-subtitle: min(26px, 1.6vw); 
+        --font-size-text:     min(min(24px, 1.5vw), 2.25vh); 
+    }
+}
+
+/* Phone */
+@media (max-aspect-ratio: 4/5) {
+
+}
+
+
 body {
     padding: 0;
     margin: 0;
@@ -22,7 +40,7 @@ b {
 #page-container {
     position: relative;
     width: 100%;
-    height: calc(100% - 75px);
+    height: 100%;
 }
 
 .page {
@@ -52,9 +70,9 @@ b {
 #border {
     opacity: 70%;
     position: absolute;
-    left: min(10vw, 50px);
-    right: min(10vw, 50px);
-    top: min(10vw, 50px);
-    bottom: min(10vw, 50px);
+    left: var(--card-padding);
+    right: var(--card-padding);
+    top: var(--card-padding);
+    bottom: var(--card-padding);
     border: 3px black solid;
 }

@@ -1,24 +1,23 @@
 #involvement {
-    position: absolute;
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
 }
 
 #involvement-container {
-    height: calc(100% - 75px);
-    width: calc(100% - 150px);
-    margin-top: 75px;
-    margin-left: 75px;
+    height: calc(100% - var(--card-padding) * 3);
+    width: calc(100% - var(--card-padding) * 2);
+    margin-top: var(--card-padding);
+    margin-left: var(--card-padding);
 }
 
 #involvement-title {
-    font-size: min(75px, 4vw);
+    font-size: var(--font-size-page);
     border-left: 3px solid black;
-    padding-left: 50px;
+    padding-left: var(--card-padding);
 }
 
 #involvement-bar {
-    margin-top: 50px;
+    margin-top: var(--card-padding);
     width: 100%;
     height: 60%;
     display: flex;
@@ -26,8 +25,9 @@
 }
 
 .involvement-item {
-    height: 100%;
-    width: 100%;
+    aspect-ratio: 1 / 1;
+    width: 30%; /* or flex-basis if inside a flex container */
+    height: auto;
     cursor: pointer;
     border: none;
     border-left: 3px solid black;
@@ -35,14 +35,15 @@
     text-align: left;
     padding: 0;
     margin: 0;
-    padding-left: 50px;    
+    padding-left: var(--card-padding);    
+
 }
 
 .involvement-item > img {
     height: 85%;
-    aspect-ratio: 1;
-    margin: 0;
-    padding: 0;
+    width: 85%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border: 1px solid black;
     opacity: 50%;
     transition: all .3s;
@@ -56,7 +57,7 @@
 .involvement-item > div {
     height: 14%;
     margin: 0;
-    font-size: 2.5vh;
+    font-size: var(--font-size-text);
     display: flex;
     align-items: center;
     font-family: 'Fragment Mono';

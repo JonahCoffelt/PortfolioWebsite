@@ -1,23 +1,36 @@
 #home {
-    position: absolute;
-    padding-top: 125px;
     width: 100%;
-    height: calc(100% - 125px);
+    height: 100%;
 }
 
 #home-title {
-    margin-left: 75px;
+    margin-left: var(--card-padding);
+    margin-top: var(--card-padding);
+    padding-left: var(--card-padding);
     border-left: 3px black solid;
-    padding-left: 50px;
+}
+
+#home-name {
+    font-size: var(--font-size-title);
+    letter-spacing: 12px;
 }
 
 #home-subtitle {
     font-weight: 300;
-    /* font-size: 26px; */
-    font-size: min(26px, 1.6vw);
+    font-size: var(--font-size-subtitle);
 }
 
-#home-name {
-    font-size: min(164px, 10vw);
-    letter-spacing: 12px;
+.connections-bar {
+    padding-top: var(--font-size-subtitle);
+    height: calc(2 * var(--font-size-subtitle));
+}
+
+.connections-bar > a {
+    text-decoration: none;
+}
+
+.connections-bar > a > img {
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
 }
