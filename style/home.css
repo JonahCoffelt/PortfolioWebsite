@@ -31,7 +31,8 @@
 
 .connections-bar > a > img {
     height: 100%;
-    border-radius: 100%;
+    /* border-radius: 100%; */
+    padding-right: 10px;
     cursor: pointer;
 }
 
@@ -55,6 +56,7 @@
 
     .connections-bar {
         padding-top: calc(0.25 * var(--card-padding));
-        height: calc(4 * var(--font-size-subtitle));
+        height: calc(2.5 * var(--font-size-subtitle));
+        padding-right: 2px;
     }
 }
