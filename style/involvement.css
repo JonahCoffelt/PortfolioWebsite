@@ -17,7 +17,7 @@
 }
 
 #involvement-bar {
-    margin-top: var(--card-padding);
+    margin-top: calc(var(--card-padding) * 2);
     width: 100%;
     height: 50%;
     display: flex;
@@ -56,7 +56,8 @@
 .involvement-item > div {
     height: 14%;
     margin: 0;
-    font-size: var(--font-size-text);
+    font-size: var(--font-size-subtitle);
+    font-weight: 600;
     display: flex;
     align-items: center;
     font-family: 'Fragment Mono';
@@ -84,6 +85,7 @@
         flex-direction: column;
         height: calc(100% - var(--card-padding));
         justify-content: space-between;
+        margin-top: var(--card-padding);
     }
 
     .involvement-item {
