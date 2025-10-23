@@ -74,7 +74,7 @@ b {
     :root {
         --card-padding: min(50px, 5vh);
         --nav-width: calc(100vw - 4 * var(--card-padding));
-        --font-size-title:    min(164px, 12vw); 
+        --font-size-title:    min(164px, 10vw); 
         --font-size-page:     min(55px, 4vw); 
         --font-size-subtitle: min(26px, 3vw); 
         --font-size-text:     min(min(24px, 2.5vw), 2.25vh); 
